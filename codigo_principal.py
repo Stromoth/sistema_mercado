@@ -22,15 +22,15 @@ class Mercado:
                 print(f'{k}: {v}')
             print(f'='*31)
 
-
-os.system('cls')
-loja = Mercado('EMC Produtos')
-
 class Produto:
     def __init__(self, nome, valor, quantidade):
         self.Nome = nome
         self.Valor = f'R${float(valor):.2f}'
         self.Quantidade = quantidade
+
+
+os.system('cls')
+loja = Mercado('EMC Produtos')
 
 while True:
     print(f'Sistema da {loja.nome}')
