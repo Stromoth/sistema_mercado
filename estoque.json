@@ -1,0 +1,12 @@
+[
+  {
+    "Nome": "Tomate",
+    "Valor": "R$5.00",
+    "Quantidade": 20
+  },
+  {
+    "Nome": "Arroz",
+    "Valor": "R$40.00",
+    "Quantidade": 15
+  }
+]
