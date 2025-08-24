@@ -1,9 +1,8 @@
-import os
-from classes import Mercado, Vendedor
+import pacote
 
-os.system('cls')
-loja = Mercado('EMC Produtos')
-vendedor = Vendedor('Gabriel')
+pacote.system('cls')
+loja = pacote.Mercado('EMC Produtos')
+vendedor = pacote.Vendedor('Gabriel')
 
 while True:
     print(f'Sistema da {loja.nome}')
@@ -13,7 +12,7 @@ while True:
     print('4 - Sair')
     escolha = int(input('-> '))
 
-    os.system('cls')
+    pacote.system('cls')
     match escolha:
         case 1: # Gerenciar estoque
             while True:
@@ -26,7 +25,7 @@ while True:
                 print('6 - Voltar')
 
                 escolha = int(input('-> '))
-                os.system('cls')
+                pacote.system('cls')
                 match escolha:
                     case 1:
                         loja.cadastrar_produto()
@@ -39,7 +38,7 @@ while True:
                     case 5:
                         loja.reordenar_estoque()
                     case 6:
-                        os.system('cls')
+                        pacote.system('cls')
                         break
         case 2: # Vender
             vendedor.vender(loja)
