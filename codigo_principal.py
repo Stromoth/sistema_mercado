@@ -22,7 +22,8 @@ while True:
                 print('2 - Remover produto')
                 print('3 - Editar produto')
                 print('4 - Ver estoque')
-                print('5 - Voltar')
+                print('5 - Reordenar estoque')
+                print('6 - Voltar')
 
                 escolha = int(input('-> '))
                 os.system('cls')
@@ -36,6 +37,8 @@ while True:
                     case 4:
                         loja.mostrar_estoque()
                     case 5:
+                        loja.reordenar_estoque()
+                    case 6:
                         os.system('cls')
                         break
         case 2: # Vender
